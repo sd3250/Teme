@@ -1,7 +1,7 @@
 package ro.sci.domain;
 
 public class Record {
-    Client client;
-    DealerCar dealerCar;
-    String delearship;
+    private String client;
+    private DealerCar dealerCar;
+    private String delearship;
 }
