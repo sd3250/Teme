@@ -40,6 +40,7 @@ public class DealerShip {
     }
 
      /**
+      * @return may return null
      * cand se foloseste, in alta metoda, daca nu tratez null, s-ar putea sa arunca a nullPointerExeption! de vazut cursul de 
      * exceptii, am ales sa nu tratez exceptia pentru ca e o exceptie de runtime si e mai costisitor ca resurse decat de 
      * verificat cand o identific si sa fac un if/else pe null la folosire, poate ca se complica codul in viitor, 
