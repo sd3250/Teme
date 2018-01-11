@@ -11,8 +11,8 @@ public class DealerCar extends Car {
         this.price = price;
     }
 
-    public DealerCar(float motor, float battery, float consumtion, String manufacturer, String model, double year, boolean isNew, int stock, Price price) {
-        super(motor, battery, consumtion, manufacturer, model, year);
+    public DealerCar(boolean fast, float motor, float battery, float consumtion, String manufacturer, String model, double year, boolean isNew, int stock, Price price) {
+        super(fast,motor, battery, consumtion, manufacturer, model, year);
         this.isNew = isNew;
         this.stock = stock;
         this.price = price;

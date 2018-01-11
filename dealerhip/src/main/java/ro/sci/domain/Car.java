@@ -1,6 +1,7 @@
 package ro.sci.domain;
 
 public class Car {
+    private boolean fastCharge;
     private float motor;
     private float battery;
     private float consumtion;
@@ -11,7 +12,8 @@ public class Car {
     public Car() {
     }
 
-    public Car(float motor, float battery, float consumtion, String manufacturer, String model, double year) {
+    public Car(boolean fastCharge, float motor, float battery, float consumtion, String manufacturer, String model, double year) {
+        this.fastCharge = fastCharge;
         this.motor = motor;
         this.battery = battery;
         this.consumtion = consumtion;
@@ -68,13 +70,18 @@ public class Car {
         this.year = year;
     }
 
+    public boolean isFastCharge() {
+        return fastCharge;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
-                "motor=" + motor +
+                "fastCharge=" + fastCharge +
+                ", motor=" + motor +
                 ", battery=" + battery +
                 ", consumtion=" + consumtion +
-                ", manufacturer=" + manufacturer +
+                ", manufacturer='" + manufacturer + '\'' +
                 ", model='" + model + '\'' +
                 ", year=" + year +
                 '}';
