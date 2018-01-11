@@ -15,6 +15,7 @@ public class DealerShip {
         cars = copyOf(cars, cars.length+1);
         cars[cars.length-1] = car;
 //        index++;
+// mai trebui e adaugat daca masinile (cate sunt in stock) exista deja si adaugat stockul        
     }
 
     public DealerShip(String name) {
