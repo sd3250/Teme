@@ -40,7 +40,13 @@ public class DealerShip {
     }
 
      /**
-     * cand se foloseste ar putea arunca a nullPointerExeption! de vazut cursul de exceptii 
+     * cand se foloseste, in alta metoda, daca nu tratez null, s-ar putea sa arunca a nullPointerExeption! de vazut cursul de 
+     * exceptii, am ales sa nu tratez exceptia pentru ca e o exceptie de runtime si e mai costisitor ca resurse decat de 
+     * verificat cand o identific si sa fac un if/else pe null la folosire, poate ca se complica codul in viitor, 
+     * dar voi tine cont de acel null cand am sa apelez acest goz de cod cu un if, 
+     * daca se vrea se trec la un try/cath/final, modific, dar aia o sa imi dauneze la runtime :)
+     * (de revazut zilele astea acest goz si poate punem o exceptie aici, brain dead, cum dracu fac un remindef din asta?!, luna 
+     * zice ca sa las asta ...
      */
     public DealerCar getCarById(int i){
         if (i > cars.length){
