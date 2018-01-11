@@ -20,6 +20,7 @@ public class Main {
 //        DelearShipUtils d = new DelearShipUtils();
 //        d.listCars(dealerShip);
         DelearShipUtils.listCars(dealerShip);
+        System.out.println(dealerShip.getNumberOfCars());
 
     }
 }
