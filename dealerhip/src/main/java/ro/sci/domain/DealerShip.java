@@ -39,6 +39,9 @@ public class DealerShip {
         return cars.length;
     }
 
+     /**
+     * cand se foloseste ar putea arunca a nullPointerExeption! de vazut cursul de exceptii 
+     */
     public DealerCar getCarById(int i){
         if (i > cars.length){
             return null;
